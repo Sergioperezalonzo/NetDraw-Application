@@ -1,6 +1,7 @@
 /**
  * A program that send information to another computer(sever). The panel allows you to draw and stamp objects to the panel.
  * @author Sergio Perez
+ *@author David Eck
  */
 package netgame.draw;
 
@@ -342,7 +343,7 @@ public class NetDraw extends JPanel {
             
             try{
                 
-            client = new DrawClient(host, 32001);
+            client = new DrawClient("localhost", 32001); // or you can use the host string (337)
             message.setText(host + " is Connected......");
             
             }
